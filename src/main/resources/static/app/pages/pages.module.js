@@ -8,6 +8,7 @@
     'Soochna.pages.register',
     'Soochna.pages.login',
     'Soochna.pages.editor',
+    'Soochna.pages.ministry',
 
   ])
 
