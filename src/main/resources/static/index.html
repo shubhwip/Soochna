@@ -14,11 +14,8 @@
     <meta name="author" content="Shubham Jain">
 
     <title>Soochna</title>
-
-    <!-- Main styles for this application -->
-    <link rel="stylesheet" href="../bower_components/angular-bootstrap/ui-boostrap-csp.css">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/navbar-fixed-top.css">
+    <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+   
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
@@ -27,19 +24,27 @@
     <ui-view></ui-view>
 
     <!-- Bootstrap and necessary plugins -->
+
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
-    <!-- AngularJS -->
+        <!-- AngularJS -->
     <script src="bower_components/angular/angular.min.js"></script>
 
-    <!-- AngularJS Toastr -->
-    <script src="bower_components/angular-toastr/dist/angular-toastr.min.js"></script>
+        <!-- Angular Route JS -->
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+        <!-- Angular Bootstrap JS -->
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 
     <!-- AngularJS plugins -->
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
+    <!-- AngularJS Toastr -->
+    <script src="bower_components/angular-toastr/dist/angular-toastr.min.js"></script>
+
     <!-- ocLazyLoad Plugin -->
-    <script src="bower_components/oclazyload/dist/ocLazyLoad.min.j"></script>
+    <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
 
     <!-- AngularJS Soochna App scripts -->
 
@@ -47,6 +52,9 @@
     <script src="app/app.js"></script>
     <script src="app/routes.js"></script>
     <script src="app/pages/pages.module.js"></script>
+
+    <!-- Soochan Welcome Page -->
+    <script src="app/pages/welcome/welcome.module.js"></script>
     
 
 </body>

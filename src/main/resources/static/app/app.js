@@ -1,9 +1,8 @@
 'use strict';
 
 angular.module('Soochna', [
-  'ngAnimate',
-  'ui.bootstrap',
   'ui.router',
+  'ui.bootstrap',
   'toastr',
 
   'Soochna.pages'

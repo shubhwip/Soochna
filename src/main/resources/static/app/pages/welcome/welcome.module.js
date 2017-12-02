@@ -11,7 +11,7 @@
   function routeConfig($stateProvider) {
     $stateProvider
         .state('soochnaAdmin.welcome', {
-          url: '/dashboard',
+          url: '/welcome',
           templateUrl: 'app/pages/welcome/welcome.html',
           title: 'Welcome to Soochna',
           sidebarMeta: {

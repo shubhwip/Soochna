@@ -7,6 +7,5 @@
     'Soochna.pages.welcome',
 
   ])
-      .config(routeConfig);
 
 })();
