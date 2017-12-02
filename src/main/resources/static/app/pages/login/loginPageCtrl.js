@@ -26,7 +26,7 @@
 			  	self.user.password = '';
 			  	console.log("login successfull");
 		  },function(errResponse){
-				$state.go('soochnaAdmin.welcome', {} , { reload: 'soochnaAdmin.dashboard' });
+				$state.go('soochnaAdmin.welcome', {} , { reload: 'soochnaAdmin.welcome' });
 		  		console.log(errResponse.data);
 			  	if (errResponse.status == 410){
 						console.log("Error");

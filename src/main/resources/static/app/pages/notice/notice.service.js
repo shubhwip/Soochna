@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  angular.module('Soochna.pages.soochna')
+  angular.module('Soochna.pages.notice')
       .service('NoticeService',NoticeService);
 
   /** @ngInject */

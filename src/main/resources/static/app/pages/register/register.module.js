@@ -14,10 +14,6 @@
           url: '/register',
           templateUrl: 'app/pages/register/register.html',
           title: 'Soochna Admin Registartion',
-          sidebarMeta: {
-            icon: 'ion-android-home',
-            order: 0,
-          },
           controller: 'RegisterPageCtrl as RegisterCtrl'
         });
   }

@@ -1,4 +1,5 @@
-<form class="form-horizontal form-register" action='' method="POST">
+<div class="register-form">
+<form class="form-horizontal form-register" name="RegisterCtrl.registerForm" method="POST">
   <fieldset>
     <div id="legend">
       <legend class="">Register</legend>
@@ -8,58 +9,54 @@
     <div class="control-group">
       <!-- UID -->
       <div class="controls">
-        <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name" class="input-xlarge">
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name" data-ng-model="RegisterCtrl.user.firstName" class="input-xlarge">
       </div>
     </div>
 
     <div class="control-group">
       <!-- UID -->
       <div class="controls">
-        <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name" class="input-xlarge">
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name" data-ng-model="RegisterCtrl.user.lastName" class="input-xlarge">
       </div>
     </div>
 
     <div class="control-group">
       <!-- UID -->
       <div class="controls">
-        <input type="text" id="ministryName" name="ministryName" placeholder="Enter your Ministry Name" class="input-xlarge">
+        <input type="text" id="ministryName" name="ministryName" placeholder="Enter your Ministry Name" data-ng-model="RegisterCtrl.user.ministryName" class="input-xlarge">
       </div>
     </div>
 
     <div class="control-group">
       <!-- UID -->
       <div class="controls">
-        <input type="text" id="uid" name="uid" placeholder="Enter your aadhar card UID" class="input-xlarge">
+        <input type="text" id="uid" name="uid" placeholder="Enter your aadhar card UID" data-ng-model="RegisterCtrl.user.uid"class="input-xlarge">
       </div>
     </div>
  
     <div class="control-group">
       <!-- E-mail -->
       <div class="controls">
-        <input type="email" id="email" name="email" placeholder="Enetr Your Email Address" class="input-xlarge">
+        <input type="email" id="email" name="email" placeholder="Enter Your Email Address" data-ng-model="RegisterCtrl.user.email"class="input-xlarge">
       </div>
     </div>
  
     <div class="control-group">
       <!-- Password-->
       <div class="controls">
-        <input type="password" id="password" name="password" placeholder="Enter your Password" class="input-xlarge">
+        <input type="password" id="password" name="password" placeholder="Enter your Password" data-ng-model="RegisterCtrl.user.password" class="input-xlarge">
       </div>
     </div>
  
-    <div class="control-group">
-      <!-- Password -->
-      <div class="controls">
-        <input type="password" id="password_confirm" name="password_confirm" placeholder="Confirm your password" class="input-xlarge">
-      </div>
-    </div>
  
     <div class="control-group">
       <!-- Button -->
-      <div class="controls">
-        <button class="btn btn-success">Register</button>
+      <div class="controls button-place">
+        <button class="btn btn-success" data-ng-click="RegisterCtrl.register(); RegisterCtrl.registerForm.$submitted=true;">Register</button>
       </div>
     </div>
     </div>
   </fieldset>
 </form>
+
+</div>

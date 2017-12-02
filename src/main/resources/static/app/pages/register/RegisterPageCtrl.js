@@ -8,7 +8,18 @@
     .controller('RegisterPageCtrl', RegisterPageCtrl);
 
   /** @ngInject */
-  function RegisterPageCtrl($http, RegisterService) {
+  function RegisterPageCtrl($http, RegisterService, $state) {
+
+// 1. http://localhost:8181/api/register
+// Request:
+// {
+// 	"firstName":"Ankit",
+// 	"lastName":"Jain",
+// 	"uid": "111122223333",
+// 	"password": "ankit",
+// 	"ministryName": "Ministry of Commerce",
+// 	"email":"ankit@abc.com"
+// }
 
 		  
 	  var self = this;
@@ -21,17 +32,8 @@
 		  self.user.lastName = '';
 		  self.user.email = '';
 		  self.user.password = '';
-		  self.user.confirmPassword = '';
-		  self.user.role= 'ADMIN';
 	  }
 
-	  self.validatePasswordMatch = function() {
-		  self.registerForm.confirmPassword.$setValidity('password',false);
-		  if(self.user.password !== self.user.confirmPassword)
-			  return false;
-		  self.registerForm.confirmPassword.$setValidity('password',true);
-		  	  return true;
-	  }
 
 	  self.register = function() {
 	  	RegisterService.register(self.user).then(function(response) {
@@ -42,7 +44,8 @@
 			  self.user.confirmPassword = '';
 			  console.log("register successfull");
 		  },function(errResponse){
-				  console.log("Error");
+		  	    $state.go('soochnaMain.login', {} , { reload: 'soochnaMain.login' });
+				console.log("Error");
 		  });
 	  }	  
 	  self.init();
