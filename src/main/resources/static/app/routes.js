@@ -4,7 +4,7 @@ angular.module('Soochna')
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
   console.log("routes entry");
-  $urlRouterProvider.otherwise('/welcome');
+  $urlRouterProvider.otherwise('/soochna');
 
   $stateProvider
   .state('soochnaAdmin', {

@@ -11,6 +11,7 @@
     'Soochna.pages.ministry',
     'Soochna.pages.notice',
     'Soochna.pages.soochna',
+    'Soochna.pages.profile',
 
   ])
 
