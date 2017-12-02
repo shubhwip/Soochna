@@ -10,6 +10,7 @@
     'Soochna.pages.editor',
     'Soochna.pages.ministry',
     'Soochna.pages.notice',
+    'Soochna.pages.soochna',
 
   ])
 
