@@ -1,5 +1,5 @@
 <div class="register-form">
-<form class="form-horizontal form-register" action='' method="POST">
+<form class="form-horizontal form-register" method="POST">
   <fieldset>
     <div id="legend">
       <legend class="">Login</legend>
@@ -8,21 +8,21 @@
     <div class="control-group">
       <!-- UID -->
       <div class="controls">
-        <input type="text" id="uid" name="uid" placeholder="Enter your aadhar card UID" class="input-xlarge">
+        <input type="text" id="uid" name="uid" data-ng-model="LoginCtrl.user.uid" placeholder="Enter your aadhar card UID" class="input-xlarge">
       </div>
     </div>
  
     <div class="control-group">
       <!-- Password-->
       <div class="controls">
-        <input type="password" id="password" name="password" placeholder="Enter your Password" class="input-xlarge">
+        <input type="password" id="password" name="password" data-ng-model="LoginCtrl.user.password" placeholder="Enter your Password" class="input-xlarge">
       </div>
     </div>
  
     <div class="control-group">
       <!-- Button -->
       <div class="controls">
-        <button class="btn btn-success">Sign In</button>
+        <button class="btn btn-success" data-ng-click="LoginCtrl.login();">Sign In</button>
       </div>
     </div>
     </div>
