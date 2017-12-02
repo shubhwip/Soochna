@@ -9,6 +9,7 @@
     'Soochna.pages.login',
     'Soochna.pages.editor',
     'Soochna.pages.ministry',
+    'Soochna.pages.notice',
 
   ])
 
