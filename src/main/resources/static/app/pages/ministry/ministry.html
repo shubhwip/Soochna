@@ -1,0 +1,16 @@
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Ministry Name</th>
+                <th>Ministry Head</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="minis in ministries">
+                <td>{{minis.ministryName}}</td>
+                <td>{{minis.ministryHead}}</td>
+                <td>{{minis.email}}</td>
+            </tr>
+        </tbody>
+    </table>

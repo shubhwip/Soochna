@@ -1,0 +1,11 @@
+<div class="soochna" data-ng-repeat="notice in notices">
+<div class="card">
+  <h3 class="card-header">{{notice.ministryName}}</h3>
+  <div class="card-block">
+    <h4 class="card-title">{{notice.noticeTitle}}</h4>
+    <div class="soochnaContent" ng-bind-html="notice.noticeContent | mysce">
+    </div>
+  </div>
+</div>
+<br>
+</div>

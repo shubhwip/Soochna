@@ -4,8 +4,8 @@
 (function () {
   'use strict';
 
-  angular.module('Soochna.pages.welcome', [])
-      .config(routeConfig);
+  var app = angular.module('Soochna.pages.welcome', [])
+  app.config(routeConfig);
 
   /** @ngInject */
   function routeConfig($stateProvider) {
@@ -20,5 +20,9 @@
           }
         });
   }
+
+  app.controller('Soochna.pages.welcome', function($scope) {
+        $scope.activeMenu = 'Welcome';
+  });
 
 })();

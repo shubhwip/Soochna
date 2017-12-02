@@ -12,10 +12,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#/welcome">Welcome</a></li>
-            <li><a href="#/editor">Editor</a></li>
-            <li><a href="#/notice">Notice</a></li>
-            
+            <li ng-class="{active : activeMenu === 'Welcome'}"><a href="#/welcome" ng-click="activeMenu = 'Welcome'">Welcome</a></li>
+            <li ng-class="{active : activeMenu === 'Editor'}"><a href="#/editor" ng-click="activeMenu = 'Editor'">Editor</a></li>
+            <li ng-class="{active : activeMenu === 'Notice'}"><a href="#/notice" ng-click="activeMenu = 'Notice'">Notice</a></li>
+            <li ng-class="{active : activeMenu === 'Ministry'}"><a href="#/ministry" ng-click="activeMenu = 'Ministry'">Ministry</a></li>    
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
