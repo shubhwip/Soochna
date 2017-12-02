@@ -1,3 +1,14 @@
+.soochna {
+  width:60%;
+  margin: 10px auto;
+  border-radius:1px solid #dadada;
+  padding:21px;
+  -moz-box-shadow: 0 0 5px #999 !important;
+  -webkit-box-shadow: 0 0 5px #999 !important;
+  box-shadow: 0 0 5px #999 !important;
+  background-color:#fff;
+}
+
 input {
 	width: 60%;
     padding: 5px;

@@ -1,3 +1,14 @@
+.soochna {
+  width:60%;
+  margin: 10px auto;
+  border-radius:1px solid #dadada;
+  padding:21px;
+  -moz-box-shadow: 0 0 5px #999 !important;
+  -webkit-box-shadow: 0 0 5px #999 !important;
+  box-shadow: 0 0 5px #999 !important;
+  background-color:#fff;
+}
+
 body {
   min-height: 2000px;
   padding-top: 70px;
@@ -6,4 +17,8 @@ body {
 .active {
     color: #555;
     background-color: #e7e7e7;
+}
+
+.editor-form {
+	margin: 35px;
 }

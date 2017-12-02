@@ -196,7 +196,7 @@ app.config(function(toastrConfig) {
     progressBar: false,
     tapToDismiss: true,
     templates: {
-	  toast: 'directives/toast/toast.html',
+	  toast: 'app/pages/layouts/toastr.html',
 	  progressbar: 'directives/progressbar/progressbar.html'
 	},
     timeOut: 5000,
@@ -290,7 +290,7 @@ If you decide that you don't want to use the built-in one, you can always use `a
 
 ```javascript
 angular.module('yourApp').run(['$templateCache', function($templateCache) {
-  $templateCache.put('directives/toast/toast.html',
+  $templateCache.put('app/pages/layouts/toastr.html',
     "<div>Your template here</div>"
   );
   $templateCache.put('directives/progressbar/progressbar.html',

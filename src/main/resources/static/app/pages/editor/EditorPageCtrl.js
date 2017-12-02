@@ -17,6 +17,7 @@
       self.notice = {};
       self.notice.noticeTitle = '';
       self.notice.noticeContent = '';
+      self.notice.isApproved = true;
     }
 
   	self.publish = function() {
@@ -25,7 +26,10 @@
             return;
           console.log("publish notice successfull");
       },function(errResponse){
+        self.notice.noticeTitle = '';
+        self.notice.noticeContent = '';
         toastr.info("Notice Published successfully", "Information");
+        $state.go('soochnaAdmin.welcome', {} , { reload: 'soochnaMain.welcome' });
           console.log("Error");
       });
     }

@@ -6,12 +6,9 @@
     "angular-bootstrap": "^2.5.0",
     "angular": "latest",
     "angular-ui-router": "1.0.0-beta.3",
-    "angular-toastr": "~2.1.1",
+    "angular-toastr": "^2.1.1",
     "oclazyload": "^1.1.0",
     "angular-route": "~1.4.1"
   },
-  "private": true,
-  "resolutions": {
-    "angular-bootstrap": "^2.5.0"
-  }
+  "private": true
 }

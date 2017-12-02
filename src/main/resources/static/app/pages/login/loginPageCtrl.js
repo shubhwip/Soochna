@@ -8,7 +8,7 @@
     .controller('LoginPageCtrl', LoginPageCtrl);
 
   /** @ngInject */
-  function LoginPageCtrl($http, LoginService, $state) {
+  function LoginPageCtrl($http, LoginService, $state, toastr) {
 	  
 	  var self = this;
 	  
@@ -26,6 +26,7 @@
 			  	self.user.password = '';
 			  	console.log("login successfull");
 		  },function(errResponse){
+		  		toastr.info("Login successfull Redirecting to admin page", "Information");
 				$state.go('soochnaAdmin.welcome', {} , { reload: 'soochnaAdmin.welcome' });
 		  		console.log(errResponse.data);
 			  	if (errResponse.status == 410){

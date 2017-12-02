@@ -38,6 +38,10 @@ public class Notice {
 
 	@Column(name = "isDeleted", nullable = false)
 	boolean deleted;
+	
+	@Column(name = "isApproved", nullable = false)
+	boolean approved;
+	
 
 	public boolean isDeleted() {
 		return deleted;
@@ -87,8 +91,16 @@ public class Notice {
 		this.createdTimeStamp = createdTimeStamp;
 	}
 
+	public boolean isApproved() {
+		return approved;
+	}
+
+	public void setApproved(boolean approved) {
+		this.approved = approved;
+	}
+
 	public Notice(long id, String ministryName, String noticeTitle, String noticeContent, Timestamp createdTimeStamp,
-			boolean deleted) {
+			boolean deleted, boolean approved) {
 		super();
 		this.id = id;
 		this.ministryName = ministryName;
@@ -96,6 +108,7 @@ public class Notice {
 		this.noticeContent = noticeContent;
 		this.createdTimeStamp = createdTimeStamp;
 		this.deleted = deleted;
+		this.approved = approved;
 	}
 
 }

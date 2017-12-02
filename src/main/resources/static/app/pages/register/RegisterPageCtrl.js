@@ -8,7 +8,7 @@
     .controller('RegisterPageCtrl', RegisterPageCtrl);
 
   /** @ngInject */
-  function RegisterPageCtrl($http, RegisterService, $state) {
+  function RegisterPageCtrl($http, RegisterService, $state, toastr) {
 
 // 1. http://localhost:8181/api/register
 // Request:
@@ -44,6 +44,7 @@
 			  self.user.confirmPassword = '';
 			  console.log("register successfull");
 		  },function(errResponse){
+		  		toastr.info("Registration Successful Redirecting to Login Page", "Information");
 		  	    $state.go('soochnaMain.login', {} , { reload: 'soochnaMain.login' });
 				console.log("Error");
 		  });
