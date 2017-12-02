@@ -7,6 +7,7 @@
     'Soochna.pages.welcome',
     'Soochna.pages.register',
     'Soochna.pages.login',
+    'Soochna.pages.editor',
 
   ])
 
