@@ -5,6 +5,7 @@
     'ui.router',
      
     'Soochna.pages.welcome',
+    'Soochna.pages.register',
 
   ])
 

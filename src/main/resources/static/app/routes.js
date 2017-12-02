@@ -9,28 +9,28 @@ angular.module('Soochna')
   $stateProvider
   .state('soochnaAdmin', {
     abstract: true,
-    templateUrl: 'app/pages/common/layouts/soochnaadmin.html',
+    templateUrl: 'app/pages/layouts/soochnaadmin.html',
     resolve: {
       loadCSS: ['$ocLazyLoad', function($ocLazyLoad) {
         // you can lazy load CSS files
         return $ocLazyLoad.load([{
           serie: true,
           name: 'Admin CSS',
-          files: ['app/admin.css']
+          files: ['assets/admin.css']
         }]);
       }]
     }
   })
   .state('soochnaMain', {
     abstract: true,
-    templateUrl: 'app/pages/common/layouts/soochnamain.html',
+    templateUrl: 'app/pages/layouts/soochnamain.html',
     resolve: {
       loadCSS: ['$ocLazyLoad', function($ocLazyLoad) {
         // you can lazy load CSS files
         return $ocLazyLoad.load([{
           serie: true,
           name: 'Main css',
-          files: ['app/main.css']
+          files: ['assets/main.css']
         }]);
       }]
     }
