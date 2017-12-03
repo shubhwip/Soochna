@@ -45,8 +45,7 @@ CREATE TABLE `notice` (
   `notice_title` varchar(100) NOT NULL,
   `notice_content` text NOT NULL,
   `created_time_stamp` timestamp NULL DEFAULT NULL,
-  `is_deleted` tinyint(1) NOT NULL,
-  `is_approved` tinyint(1) NOT NULL
+  `is_deleted` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -66,13 +65,6 @@ CREATE TABLE `user` (
   `modified_time_stamp` timestamp NULL DEFAULT NULL,
   `is_deleted` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`uid`, `first_name`, `last_name`, `password`, `email`, `ministry_name`, `created_time_stamp`, `modified_time_stamp`, `is_deleted`) VALUES
-('111122223333', 'Ankit', 'Jain', '7d7f3b0de32b6cc2e9608ebf7986c26b5954d288', 'ankit@abc.com', 'Ministry of Commerce', '2017-12-02 08:58:52', '2017-12-02 08:58:52', 0);
 
 --
 -- Indexes for dumped tables

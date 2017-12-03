@@ -13,8 +13,9 @@
 	  var self = this;
 	  
 	  self.login = function(user) {
+      console.log(user);
       $http.defaults.headers.post["Content-Type"] = "application/json";
-      return $http.post("api/login", user);
+      return $http.post("/api/login", user);
 	  }
   }
 

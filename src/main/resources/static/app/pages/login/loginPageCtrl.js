@@ -22,8 +22,6 @@
 	  	LoginService.login(self.user).then(function(response) {
 	  		   if(self.loginForm.$invalid)
 			  		return;
-			  	self.user.uid = '';
-			  	self.user.password = '';
 			  	console.log("login successfull");
 		  },function(errResponse){
 		  		toastr.info("Login successfull Redirecting to admin page", "Information");

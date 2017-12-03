@@ -10,9 +10,8 @@
 
 	  var self = this;
 
-	  self.getNoticesByMinistry = function(ministryName) {
-      console.log(ministryName + "sjj");
-		  return $http.get("/api/notice/byMinistry?ministry-name="+ministryName);
+	  self.getNoticesByMinistry = function() {
+		  return $http.get("/api/notice/byMinistry");
 	  }
   }
 

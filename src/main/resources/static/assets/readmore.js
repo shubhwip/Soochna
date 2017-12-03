@@ -311,6 +311,7 @@
 
 
   $.fn.readmore = function(options) {
+    console.log(options);
     var args = arguments,
         selector = this.selector;
 

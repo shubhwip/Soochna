@@ -9,6 +9,7 @@
   	console.log("Soochna Page Entry");
 
 		jQuery(document).ready(function () {
+	
 			$(".soochnaContent").readmore({
 			    speed: 100, // (in milliseconds)
 				maxHeight: 100, // (in pixels)

@@ -80,10 +80,6 @@ public class NoticeController {
 	@RequestMapping(value = "/notice/ministry", method = RequestMethod.GET)
 	public ResponseEntity<String> getAllNotices(UriComponentsBuilder uriComponentBuilder, HttpSession httpSession) {
 		
-		Object session = httpSession.getAttribute("uid");
-		if(session==null)
-			return new ResponseEntity<String>("Please login", HttpStatus.UNAUTHORIZED);
-		
 		List<Notice> allNotices = new ArrayList<Notice>();
 		List<NoticeDetails> noticeList = new ArrayList<>();
 		ObjectMapper mapper = new ObjectMapper();
