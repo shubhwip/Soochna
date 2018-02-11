@@ -23,4 +23,6 @@ public interface NoticeRepository extends CrudRepository<Notice, Serializable> {
 	List<Notice> findByMinistryName(String ministryName);
 
 	List<Notice> findAllByOrderByCreatedTimeStampDesc();
-}
+	
+	Notice findByNoticeTitleAndMinistryName(String ministryName, String noticeTitle);
+}	

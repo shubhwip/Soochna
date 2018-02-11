@@ -40,8 +40,10 @@ public class NoticeServiceImpl implements NoticeService {
 	}
 
 	@Override
-	public Notice updateNotice(Notice notice) {
-		return noticeRepository.save(notice);
+	public void updateNotice(String noticeTitle, String ministryName) {
+		Notice notice =noticeRepository.findByNoticeTitleAndMinistryName(ministryName, noticeTitle);
+		notice.setNoticeContent("Hii");
+		noticeRepository.save(notice);
 	}
 
 	@Override
@@ -62,6 +64,13 @@ public class NoticeServiceImpl implements NoticeService {
 	@Override
 	public List<Notice> findAll() {
 		return noticeRepository.findAllByOrderByCreatedTimeStampDesc();
+	}
+
+	@Override
+	public void changeApprovalStatus(String noticeTitle) {
+		Notice notice = noticeRepository.findByNoticeTitle(noticeTitle);
+		notice.setApproved(true);
+		noticeRepository.save(notice);
 	}
 
 }

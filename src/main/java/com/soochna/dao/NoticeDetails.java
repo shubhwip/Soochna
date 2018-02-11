@@ -15,6 +15,7 @@ public class NoticeDetails {
 	private String noticeContent;
 	private String noticeTitle;
 	private Timestamp createdTimeStamp;
+	private String approvalStatus;
 
 	/**
 	 * @return the ministryName
@@ -75,5 +76,21 @@ public class NoticeDetails {
 	public void setCreatedTimeStamp(Timestamp createdTimeStamp) {
 		this.createdTimeStamp = createdTimeStamp;
 	}
+
+	/**
+	 * @return the approvalStatus
+	 */
+	public String getApprovalStatus() {
+		return approvalStatus;
+	}
+
+	/**
+	 * @param approvalStatus the approvalStatus to set
+	 */
+	public void setApprovalStatus(String approvalStatus) {
+		this.approvalStatus = approvalStatus;
+	}
+	
+	
 
 }
